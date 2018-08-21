@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<!-- seleccion.html oja.la -->
+
+<html lang="es">
+<head>
+    <meta charset="UTF-8" /> 
+    <title>
+        HTML Forms - Listas de selecci&oacute;n
+    </title>
+    <link rel="stylesheet" type="text/css" href="forms.css" />
+    <script type="text/javascript" src="forms.js"></script>
+</head>
+<body>
+
+    <div id="outer">
+        <div id="form">
+            <h1>
+                HTML Forms - Listas de selecci&oacute;n
+            </h1>
+
+            <form id="f1" onsubmit="return display()" method="post">
+                <p> Lista de selecci&oacute;n: <br />
+                    <select name="select1">
+                        <option value="" disabled selected>-- Seleccione un Gato --</option>
+                        <option value="cheshire">Gato Cheshire</option>
+                        <option value="hat">El gato en el sombrero</option>
+                        <option value="bigglesworth">Mr Bigglesworth</option>
+                        <option value="fritz">Fritz el gato</option>
+                        <option value="spot">Spot</option>
+                        <option value="cat">El gato</option>
+                        <option value="tom">Tom</option>
+                        <option value="heathcliff">Heathcliff</option>
+                        <option value="garfield">Garfield</option>
+                    </select>
+                </p>
+                <p> 
+                    <input type="submit" name="submit1" value="Bot&oacute;n Grande Rojo" 
+                     onclick="return display()" />  
+                </p>
+            </form>
+
+        </div> <!-- form -->
+
+        <div id="results">
+            <p> Los Resultados ir&aacute;n aqu&iacute; </p>
+        </div> <!-- results -->
+    </div> <!-- outer -->
+
+</body>
+</html>

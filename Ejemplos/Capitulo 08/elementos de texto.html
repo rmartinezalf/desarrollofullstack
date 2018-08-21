@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<!-- elementos de texto oja.la -->
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8" /> 
+    <title>
+        HTML Forms - elementos de texto
+    </title>
+    <link rel="stylesheet" type="text/css" href="forms.css" />
+    <script type="text/javascript" src="forms.js"></script>
+</head>
+<body>
+
+    <div id="outer">
+        <div id="form">
+            <h1>
+                HTML Forms - elementos de texto
+            </h1>
+            <form id="f1" onsubmit="return display()" method="post">
+
+                <p> Texto: <input type="text" name="texto1" autofocus /> </p>
+
+                <p> Contrase&ntilde;a: <input type="password" name="contrasena1" /> </p>
+
+                <p> Fecha: <input type="date" name="fecha1" 
+                    pattern="\d{2}-\d{2}-\d{4}" title="DD-MM-YYYY"/> </p>
+
+                <p> Color: <input type="color" name="color1" value="#336699" /> </p>
+
+                <p> Email: <input type="email" name="email1" multiple /> </p>
+
+                <p> N&uacute;mero (1-5): <input type="number" name="numero1" min="1" max="5" value="1" /> </p>
+
+                <p> Rango (1-100 en pasos de 10):
+                    <input type="range" name="rango1" min="0" max="100"
+                        step="10" value="20" /> </p>
+
+                <p> B&uacute;squeda: <input type="search" name="busqueda" /> </p>
+
+                <p> URL: <input type="url" name="url1" /> </p>
+
+                <p> &Aacute;rea de texto: </p>
+                <p> <textarea name="areaDeTexto1"></textarea> </p>
+
+                <p> 
+                    <input type="submit" name="submit1" value="Bot&oacute;n Grande Rojo" 
+                     onclick="return display()" /> 
+                </p>
+
+            </form>
+
+        </div> <!-- form -->
+
+        <div id="results">
+            <p> Los Resultados ir&aacute;n aqu&iacute; </p>
+        </div> <!-- results -->
+    </div> <!-- outer -->
+
+</body>
+</html>

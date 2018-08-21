@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<!-- rps.html oja.la -->
+
+<html lang="es">
+<head>
+    <meta charset="UTF-8" /> 
+    <title>
+       P&aacute;gina Principal Piedra Papel Tijeras Corporaci&oacute;n
+    </title>
+    <link rel="stylesheet" type="text/css" href="main.css" />
+    <link rel="stylesheet" type="text/css" href="rps.css" />
+</head>
+<body>
+
+    <nav id="top-menu">
+        <ul>
+            <li> <a href="rps.html">Inicio</a> </li>
+            <li> <a href="piedra.html">Piedra</a> </li>
+            <li> <a href="papel.html">Papel</a> </li>
+            <li> <a href="tijeras.html">Tijeras</a> </li>
+            <li> <a href="contacto.html">Contacto</a> </li>
+            <li> <a href="comprar.html">Comprar</a> </li>
+        </ul>
+    </nav>
+
+    <div id="maindiv">
+
+        <header>        
+            <hgroup>
+                <h1> Piedra Papel Tijeras Corporaci&oacute;n </h1>
+                <h2> ¿Qui&eacute;n Ganar&aacute;? </h2> 
+            </hgroup>
+            <p> Oh, el suspenso! </p>
+        </header>
+
+        <section id="juegoRPS">
+            <article>
+                <h1> Historia del Juego </h1>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Pellentesque sit amet lorem ligula. Nam pulvinar nunc ac magna
+                    aliquam quis sodales dui elementum. Fusce a lacus leo. Maecenas
+                    ut dui eu quam condimentum sagittis. Morbi aliquam auctor
+                    facilisis. Ut urna ligula, lobortis vitae porta ut, auctor id
+                    eros. Vestibulum luctus malesuada tortor nec fermentum.
+                    Suspendisse potenti. Proin sapien nisl, lobortis varius eleifend
+                    vitae, pretium mattis leo. Donec eu nisi turpis, sit amet rutrum
+                    leo. Cras volutpat metus quis ipsum blandit sed laoreet odio
+                    pharetra.
+                </p>
+            </article>
+
+            <article>
+                <h1>Posibles Movimientos</h1>
+                <p> Se te hes permitido en una ronda sacar una de estas opciones:</p>
+                    <figure class="left">
+                        <img src="images/roca.png"/>
+                        <figcaption> Puedas sacar piedra. </figcaption>
+                    </figure>
+
+                    <figure class="left">
+                        <img src="images/papel.png"/>
+                        <figcaption> Puedas sacar papel. </figcaption>
+                    </figure>
+
+                    <figure class="left">
+                        <img src="images/tijeras.png"/>
+                        <figcaption> Puedas sacar tijeras. </figcaption>
+                    </figure>
+
+            </article>
+
+            <article>
+                <h1> ¿Qui&eacute;n Vence a Qui&eacute;n?</h1>
+                <p> En esta tabla podr&aacute; encontrar todas las posibles convinaciones del juego Piedra Papel y Tijeras con su respectivo ganador.</p>
+
+                <div id="ganadoresRPS">
+                    <table>
+                        <caption>
+                            Posibles convinaciones del juego piedra papel y tijeras con su ganador.
+                        </caption>
+
+                        <thead>
+                            <tr>
+                                <th> Jugador 1 </th>
+                                <th> Jugador 2 </th>
+                                <th> Ganador </th>
+                            </tr>
+                        </thead>
+
+                        <tfoot>
+                            <tr>
+                                <td> Jugador 1 </td>
+                                <td> Jugador 2 </td>
+                                <td> Ganador </td>
+                            </tr>
+                        </tfoot>
+
+                        <tbody>
+                            <tr class="par">
+                                <td> Piedra </td>
+                                <td> Piedra </td>
+                                <td> Nadie </td>
+                            </tr>
+                            <tr class="impar">
+                                <td> Piedra </td>
+                                <td> Papel </td>
+                                <td> Papel </td>
+                            </tr>
+                            <tr class="par">
+                                <td> Piedra </td>
+                                <td> Tijeras </td>
+                                <td> Piedra </td>
+                            </tr>
+
+
+                            <tr class="impar">
+                                <td> Papel </td>
+                                <td> Piedra </td>
+                                <td> Papel </td>
+                            </tr>
+                            <tr class="par">
+                                <td> Papel </td>
+                                <td> Papel </td>
+                                <td> Nadie </td>
+                            </tr>
+                            <tr class="impar">
+                                <td> Papel </td>
+                                <td> Tijeras </td>
+                                <td> Tijeras </td>
+                            </tr>
+
+
+                            <tr class="par">
+                                <td> Tijeras </td>
+                                <td> Piedra </td>
+                                <td> Piedra </td>
+                            </tr>
+                            <tr class="impar">
+                                <td> Tijeras </td>
+                                <td> Papel </td>
+                                <td> Tijeras </td>
+                            </tr>
+                            <tr class="par">
+                                <td> Tijeras </td>
+                                <td> Tijeras </td>
+                                <td> Nadie </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                
+
+            </article>
+        </section>
+        <div class="clear"></div>
+    </div>
+
+    <footer>
+        <p>
+            Copyright &copy; 2013 Corporation Piedra Papel y Tijeras Inc., Ltd., Phd.
+        </p>
+    </footer>
+
+</body>
+</html>

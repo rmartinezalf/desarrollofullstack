@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<!-- progress.html oja.la -->
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8" /> 
+    <title>
+        Elemento HTML Progress
+    </title>
+    <script>
+        var barraDeProgreso;
+        var valorTexto;
+        var pValor = 0;
+
+        function init() {
+            barraDeProgreso = document.getElementById('p1')
+            valorTexto = document.getElementById('s1')
+            setInterval(updateProgress, 50);
+        }
+
+        function updateProgress() {
+             pValor += 1;
+            if( pValor > 100)  pValor = 1;
+            barraDeProgreso.value = pValor;
+            valorTexto.textContent = pValor;
+        }
+
+        window.onload = init;
+    </script>
+    <style>
+        progress#p1 { width: 400px; }
+    </style>
+</head>
+<body>
+
+<h1>
+     Elemento HTML Progress
+</h1>
+
+<h2>Barra de progreso</h2>
+<p>
+    progreso: <progress id="p1" value="0" max="100"><span id="s1">0</span>%</progress>
+</p>
+ 
+</body>
+</html>

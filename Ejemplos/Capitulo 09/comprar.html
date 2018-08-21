@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<!-- comprar.html oja.la -->
+
+<html lang="es">
+<head>
+    <meta charset="UTF-8" /> 
+    <title>
+        Compra el juego
+    </title>
+    <link rel="stylesheet" type="text/css" href="main.css" />
+    <link rel="stylesheet" type="text/css" href="rps.css" />
+    <script>
+        function calc() {
+            q = parseInt(document.getElementById('cantidad').value);
+            p = parseInt(document.getElementById('precio').innerText) || 49;
+            document.getElementById('total').value = q * p;
+        }
+        window.onload = calc;
+    </script>
+</head>
+<body>
+
+    <nav id="top-menu">
+        <ul>
+            <li> <a href="rps.html">Inicio</a> </li>
+            <li> <a href="piedra.html">Piedra</a> </li>
+            <li> <a href="papel.html">Papel</a> </li>
+            <li> <a href="tijeras.html">Tijeras</a> </li>
+            <li> <a href="contacto.html">Contacto</a> </li>
+            <li> <a href="comprar.html">Comprar</a> </li>
+        </ul>
+    </nav>
+
+    <div id="maindiv">
+    <header>
+        <hgroup>
+            <h1> Compra el Juego </h1>
+            <h2> Has un gran regalo! </h2> 
+        </hgroup>
+    </header>
+
+    <article id="contact">
+        <h1> ¿D&oacute;nde comprar? </h1>
+        <p>
+            Eso es una tontería. Es un juego que usted juega con las manos. Usted no tiene que comprar nada.
+        </p>
+    </article>
+
+    <aside class="about">
+        <header>
+            <h1> Lo más destacado de RPS Corp </h1>
+            <p> La calidad es todo! </p>
+        </header>
+        <p> Una historia rica </p>
+        <section>
+            <hgroup>
+                <h1> Tama&ntilde;o </h1>
+                <h2> Muy Grande </h2>
+            </hgroup>
+            <p> ¡Somos enormes! </p>
+        </section>
+        <section>
+            <hgroup>
+                <h1> Edad </h1>
+                <h2> ¡M&aacute;s viejo que el polvo! </h2>
+            </hgroup>
+            <p> M&aacute;s antigua incluso que no podemos recordar! </p>
+        </section>
+        <section>
+            <hgroup>
+                <h1> Cultura </h1>
+                <h2> Rica </h2>
+            </hgroup>
+            <p> Todos nuestros empleados hacen yoga. </p>
+        </section>
+    </aside>
+
+    <section class="buy">
+        <h1> ¡Pedido aqu&iacute;! </h1>
+        <form action="gracias.html" method="get">
+            <p> Grabado: <input type="text" name="engraving" autofocus /> </p>
+            
+            <p> ¿Cu&aacute;ntos? <input id="cantidad" type="number" min="1" max="10" value="1" name="cantidad" 
+                onchange="calc()"/> </p>
+
+            <p> 
+                Precio: $<span id="precio">49</span> &nbsp;
+                Total: <b style="color: #900"> $<output id="total" for="cantidad">0</output> </b>
+            </p>
+            <p> Para hacer su orden presione este bot&oacute;n grande rojo </p>
+            <p style="text-align: center"> <input type="image" src="images/brb.png" name="brb" /> </p>
+        </form>
+    </section>
+
+    <div class="clear"></div>
+    </div>
+
+    <footer>
+        <p>
+            Copyright &copy; 2013 Corporation Piedra Papel y Tijeras Inc., Ltd., Phd.
+        </p>
+    </footer>
+
+</body>
+</html>

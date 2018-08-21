@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<!-- form.html oja.la -->
+
+<html lang="es">
+<head>
+    <meta charset="UTF-8" /> 
+    <title>
+        HTML Forms
+    </title>
+    <link rel="stylesheet" type="text/css" href="forms.css" />
+    <script type="text/javascript" src="forms.js"></script>
+</head>
+<body>
+
+    <div id="outer">
+        <div id="form">
+            <h1>
+                HTML Forms
+            </h1>
+
+            <form id="f1" onsubmit="return display()" method="post">
+
+                <p> Texto: <input type="text" name="texto1" autofocus /> </p>
+
+                <p> Contrase&ntilde;a: <input type="password" name="contrasena1" /> </p>
+
+                <p> Las casillas de verificaci&oacute;n: </p>
+                <p> Rojo: <input type="checkbox" name="rojo" /> &nbsp;
+                    Azul: <input type="checkbox" name="azul" checked /> &nbsp;
+                    Verde: <input type="checkbox" name="verde" /> 
+                </p>
+
+                <p> Radio buttons: </p>                
+                <p> Hola: <input type="radio" name="saludo" value="hola" /> &nbsp;
+                    Como: <input type="radio" name="saludo" value="como" /> &nbsp;
+                    Est&aacute;s: <input type="radio" name="saludo" value="estas" checked /> 
+                </p>
+
+                <p> 
+                    <input type="submit" name="submit1" value="Bot&oacute;n Grande Rojo" 
+                            onclick="return display()" />  
+                </p>
+            </form>
+        </div> <!-- form -->
+
+        <div id="results">
+            <p> Los Resultados ir&aacute;n aqu&iacute; </p>
+        </div> <!-- results -->
+    </div> <!-- outer -->
+
+</body>
+</html>

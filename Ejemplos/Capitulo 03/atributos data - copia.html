@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<!-- atributos data.html oja.la -->
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8" /> 
+    <title>
+       Atributos HTML data-&ast;
+    </title>
+    <script>
+        function aka(e) {
+            alert("aka " + e.dataset.akaaka);
+        }
+        function fire(e) {
+            tipo = e.dataset.tipoMisil;
+            carga = e.dataset.cargaMisil;
+            sonido = e.dataset.sonidoMisil;
+            alert("Lanzando el " + tipo + " con una carga " + carga + ". " + sonido);
+        }
+    </script>
+</head>
+<body>
+
+<h1>
+   Atributos HTML <code>data-&ast;</code>
+</h1>
+<p>
+    The Beatles grabaron un &aacute;lbum llamado
+        <a href="#" data-akaaka="Revolver" onclick="aka(this)">The Beatles</a>. 
+</p>
+
+<p>
+    Click aqu&iacute; para dispara el misil: 
+        <span
+        data-tipo-misil="Cohete"
+          data-carga-misil="photon torpedo"
+          data-sonido-misil="Ka-Boom!"
+          onclick="fire(this)">
+            Fuego!
+        </span>
+</p>
+
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<!-- javascript.html por Diego Juliao -->
+
+<html>
+<head>
+    <title>
+       Ejemplo Javascript 
+    </title>
+    <link rel="stylesheet" type="text/css" href="main.css" />
+    <script type="text/javascript">
+        function init() {
+            var n = 0;
+            e = document.getElementById("salida");
+            setInterval(function() { e.innerHTML = ++n; }, 1000);
+        }
+        window.onload = init;
+    </script>
+</head>
+<body>
+
+<h1>
+    Ejemplo Javascript 
+</h1>
+
+<h2>
+    La cuenta es: <span id="salida">0</span>
+</h2>
+
+</body>
+</html>

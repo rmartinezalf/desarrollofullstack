@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<!-- form.html oja.la -->
+
+<html lang="es">
+<head>
+    <meta charset="UTF-8" /> 
+    <title>
+        HTML Forms
+    </title>
+    <link rel="stylesheet" type="text/css" href="forms.css" />
+    <script type="text/javascript" src="forms.js"></script>
+</head>
+<body>
+
+<div id="outer">
+    <div id="form">
+        <h1>
+            HTML Forms
+        </h1>
+
+        <form id="f1" onsubmit="return display()" method="post">
+            <p> Texto 1: <input type="text" name="texto1" autofocus /> </p>
+            <p> Texto 2: <input type="text" name="texto2" /> </p>
+            <p> Texto 3: <input type="text" name="texto3" /> </p>
+            <p> Texto 4: <input type="text" name="texto4" /> </p>
+            <p> <input type="submit" name="submit1" 
+                value="Bot&oacute;n Grande Rojo" onclick="return display()" /> 
+            </p>
+        </form>
+
+        <datalist id="cats">
+            <option value="hat">El gato en el sombrero</option>
+            <option value="bigglesworth"></option>
+            <option value="fritz"></option>
+            <option value="spot"></option>
+            <option value="cat"></option>
+            <option value="tom"></option>
+            <option value="heathcliff"></option>
+            <option value="garfield"></option>
+        </datalist>
+
+    </div> <!-- form -->
+
+    <div id="results">
+        <p> Los Resultados ir&aacute;n aqu&iacute; </p>
+    </div> <!-- results -->
+</div> <!-- outer -->
+
+</body>
+</html>

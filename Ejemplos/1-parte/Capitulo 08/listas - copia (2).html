@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<!-- listas.html Diego Juliao -->
+
+<html lang='en'>
+<head>
+    <meta charset="UTF-8" /> 
+    <title>
+        Listas HTML
+    </title>
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <style type="text/css">
+       dl,dt,dd,ol,ul,li
+       {
+        margin:0;
+        padding: 0;
+        border:0;
+        margin-left: 1ex;
+    }
+       ul,li{list-style-position: inside;}
+       .numerada
+       {
+         list-style-type: decimal-leading-zero;
+
+       }
+        .nonumerada
+       {
+         list-style-image: url(images/papel-pequeno.png);
+       }
+    </style>
+</head>
+<body>
+
+<h1>
+    Listas HTML
+</h1>
+
+
+    <ol class="numerada">
+        <li> Uno </li>
+        <li> Dos </li>
+        <li> Tres </li>
+    </ol>
+
+    <ul class="nonumerada">
+        <li> Cuatro </li>
+        <li> Cinco </li>
+        <li> Seis </li>
+    </ul>
+
+    <dl>
+        <dt>Uno</dt>
+            <dd>El primer n&uacute;mero no es cero.</dd>
+
+        <dt>Dos</dt>
+            <dd>El n&uacute;mero despu&eacute;s de uno.</dd>
+
+        <dt>Tres</dt>
+            <dd>Para estar listo.</dd>
+
+        <dt>Cuatro</dt>
+            <dd>Ahora arranca, Rocinante, ¡ARRANCA!</dd>
+    </dl>
+
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<!-- semantica de tablas.html oja.la -->
+
+<html lang="es">
+<head>
+    <meta charset="UTF-8" /> 
+    <title>
+        Tablas HTML
+    </title>
+    <style>
+        body { font-family: tahoma, sans-serif; }
+        table { border-collapse: collapse; }
+        table, th, td { border: 1px solid black; }
+        th, td { padding: 0 3px; }
+        tfoot td {
+            background-color: #eee;
+            text-align: center;
+            font-size: 75%;
+        }
+        .col1{
+            background-color: #fcd;
+        }
+        .col2{
+            background-color: #cfd;
+        }
+        .col3{
+            background-color: #cfd  ;
+        }
+    </style>
+</head>
+<body>
+
+<h1>
+    Tablas HTML
+</h1>
+
+<table>
+    <caption>
+        Algunos &aacute;lbumes favoritos
+    </caption>
+
+    <colgroup>
+        <col span ="3"class="col1">
+
+       
+    </colgroup>
+    <thead>
+        <tr>
+            <th> T&iacute;tulo </th>
+            <th> Artista </th>
+            <th> Comentarios </th>
+        </tr>
+    </thead>
+
+    <tfoot>
+        <tr>
+            <td> Columna 1 </td>
+            <td> Columna 2 </td>
+            <td> Columna 3 </td>
+        </tr>
+    </tfoot>
+
+    <tbody>
+        <tr>
+            <td> A Sense Of Purpose </td>
+            <td> In Flames </td>
+            <td> Otro rumbo. </td>
+        </tr>
+
+        <tr>
+            <td> With Oden On Our Side </td>
+            <td> Amon Amarth </td>
+            <td> El nombre de mi bici el nombre de una canci&oacute;n </td>
+        </tr>
+
+        <tr>
+            <td> Watershed </td>
+            <td> Opeth </td>
+            <td> Combinaciones brillantes y explosivas. </td>
+        </tr>
+
+        <tr>
+            <td> Jaktens Tid </td>
+            <td> Finntroll </td>
+            <td> Un &aacute;lbum muy gracioso. </td>
+        </tr>
+    </tbody>
+</table>
+
+</body>
+</html>

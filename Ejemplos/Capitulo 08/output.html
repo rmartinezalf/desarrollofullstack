@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<!-- output.html oja.la -->
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8" /> 
+    <title>
+        Elemento HTML output
+    </title>
+    <link rel="stylesheet" type="text/css" href="forms.css" />
+    <script>
+        function calc() {
+            ia = parseInt(document.getElementById('a').value);
+            ib = parseInt(document.getElementById('b').value);
+            document.getElementById('sum').value = ia + ib;
+            document.getElementById('product').value = ia * ib;
+            document.getElementById('dif').value = Math.max(ia, ib) - Math.min(ia, ib);
+            document.getElementById('cociente').value = Math.floor(ia / ib);
+            document.getElementById('residuo').value = ia % ib;
+        }
+    </script>
+</head>
+<body>
+
+    <div id="outer">
+        <div id="form">
+            
+            <h1>
+                Elemento HTML output
+            </h1>
+
+            <form oninput="calc()">
+                    <p> Aritm&eacute;tica de enteros: </p>
+                    <p> <input type="number" id="a" value="0" autofocus /> </p>
+                    <p> <input type="number" id="b" value="0" /> </p>
+            </form>
+
+        </div> <!-- form -->
+
+        <div id="results">
+
+            <p>
+                Suma: <output id="sum" for="a b"></output> <br />
+                Diferencia: <output id="dif" for="a b"></output> <br />
+                Producto: <output id="product" for="a b"></output> <br />
+                Cociente: <output id="cociente" for="a b"></output> <br />
+                Residuo: <output id="residuo" for="a b"></output> <br />
+            </p>
+
+        </div> <!-- results -->
+    </div> <!-- outer -->
+
+</body>
+</html>

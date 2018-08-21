@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<!-- botones.html oja.la -->
+
+<html lang="es">
+<head>
+    <meta charset="UTF-8" /> 
+    <title>
+        HTML Forms - Botones
+    </title>
+    <link rel="stylesheet" type="text/css" href="forms.css" />
+    <script type="text/javascript" src="forms.js"></script>
+</head>
+<body>
+
+    <div id="outer">
+        <div id="form">
+            <h1>
+                HTML Forms - Botones 
+            </h1>
+
+            <form id="f1" onsubmit="return submitDisplay();" method="post">
+                <p> Text: <input type="text" name="text1" required autofocus /> </p>
+                <p> Password: <input type="password" name="password1" required /> </p>
+                <p> <input type="submit" name="submit1" value="Bot&oacute;n Grande Rojo" onclick="return submitDisplay()" /> </p>
+            </form>
+
+        </div> <!-- form -->
+
+        <div id="results">
+            <p> Los Resultados ir&aacute;n aqu&iacute; </p>
+        </div> <!-- results -->
+    </div> <!-- outer -->
+
+</body>
+</html>
